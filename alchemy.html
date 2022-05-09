@@ -168,7 +168,11 @@ function initialize()
 			// minVisibleDelay: 1,
 			 minUnvisibleDelay: 0.5,
 		});
-		this.scene_.fog = new THREE.Fog(0xDFE9F3, ,0.1, 2);
+		//this.scene_.fog = new THREE.Fog(0xDFE9F3, ,0.1, 2);
+	 const near = 1;
+    const far = 2;
+    const color = 'lightblue';
+		 scene.fog = new THREE.Fog(color, near, far);
 		let geometryKanji = new THREE.CubeGeometry(1.25, 1.25, 1.25);
 		let materialKanji = new THREE.MeshBasicMaterial({color:0xeeeeee, map:texture, transparent:true, opacity:0.5}); 
 		meshKanji = new THREE.Mesh( geometryKanji, materialKanji ); 
