@@ -176,12 +176,15 @@ function initialize()
 		meshKanji.position.y = 1.25/2;
 		// markerRootKanji.add( meshKanji );
 		smoothedRoot.add( meshKanji );
+	scene.fog = new THREE.FogExp2(0xffffff, 0.05);
+renderer.setClearAlpha( 0.3 );
 
 }
 
 
 function update()
 {
+	
 	// Change Kanji cube color if other markers are visible
 	visA = markerRootA.visible
 	visB = markerRootB.visible
