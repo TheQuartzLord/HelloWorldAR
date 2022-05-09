@@ -172,9 +172,10 @@ function initialize()
 	 const near = 1;
     const far = 2;
     const color = 'lightblue';
-		 scene.fog = new THREE.Fog(color, near, far);
-		let geometryKanji = new THREE.CubeGeometry(1.25, 1.25, 1.25);
-		let materialKanji = new THREE.MeshBasicMaterial({color:0xeeeeee, map:texture, transparent:true, opacity:0.5}); 
+		// scene.fog = new THREE.Fog(color, near, far);
+		//let geometryKanji = new THREE.CubeGeometry(1.25, 1.25, 1.25);
+		//let materialKanji = new THREE.MeshBasicMaterial({color:0xeeeeee, map:texture, transparent:true, opacity:0.5}); 
+	
 		meshKanji = new THREE.Mesh( geometryKanji, materialKanji ); 
 	
 		meshKanji.position.y = 1.25/2;
